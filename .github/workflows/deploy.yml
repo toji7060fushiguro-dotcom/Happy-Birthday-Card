@@ -28,6 +28,7 @@ jobs:
         env:
           NAME: ${{ secrets.NAME }}
           PIC: ${{ secrets.PIC }}
+          SCROLL_MSG: ${{ secrets.SCROLL_MSG }} 
         run: npm run init-index-remote
 
       - name: Build Project
