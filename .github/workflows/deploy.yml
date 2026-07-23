@@ -28,7 +28,7 @@ jobs:
         env:
           NAME: ${{ secrets.NAME }}
           PIC: ${{ secrets.PIC }}
-        run: npm run build:parcel
+        run: npx parcel build src/index.html --public-url ./
 
       - name: Deploy to GitHub Pages
         uses: Peaceiris/actions-gh-pages@v3
