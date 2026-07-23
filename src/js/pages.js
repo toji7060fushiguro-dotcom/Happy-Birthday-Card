@@ -1,7 +1,7 @@
 export const soon = {
   title: "Come Back Later...",
   body: `<br />
-    <h1>Hi, you come to early</h1>
+    <h1>Hi, you came too early</h1>
     <br /><br /><br />
     <p>
         I know this page is very interesting for you, especially for your special day but.<br />
@@ -15,8 +15,8 @@ export const late = {
     <h1>The party was over</h1>
     <br /><br /><br />
     <p>
-        Yes, my gift for you is kinda simple, cheap, and weird ? &#128534<br>
-        B-but. It's only for you. &#128150
+        Yes, my gift for you was kinda simple, nerdy, and weird ? &#128534<br>
+        B-but. It was only for you. &#128150
     </p>
 `,
 };
