@@ -24,11 +24,14 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      - name: Build Project
+      - name: Initialize Card Template
         env:
           NAME: ${{ secrets.NAME }}
           PIC: ${{ secrets.PIC }}
-        run: npx parcel build index.html --public-url ./
+        run: npm run init-index-remote
+
+      - name: Build Project
+        run: npm run build:parcel
 
       - name: Deploy to GitHub Pages
         uses: Peaceiris/actions-gh-pages@v3
